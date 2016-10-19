@@ -6,5 +6,5 @@ VS2012 sln
 
 [3rd\curl]          curl source
 [src]               my test app
-[vs2012]            /MD, static build all things
+[vs2012]            /MT, static build all things
 
