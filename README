@@ -1,4 +1,10 @@
-libcurl
-
+sandbox for libcurl
 https://curl.haxx.se/libcurl/c/example.html
+
+VS2012 sln
+3rd\curl\projects\Windows\VC11\curl-all.sln
+
+[3rd\curl]          curl source
+[src]               my test app
+[vs2012]            /MD, static build all things
 
