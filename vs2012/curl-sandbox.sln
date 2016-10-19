@@ -12,6 +12,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curl", "curl\curl.vcxproj",
 		{99C42591-8BF5-4B2E-A3D5-6A51E2C995F7} = {99C42591-8BF5-4B2E-A3D5-6A51E2C995F7}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wget", "apps\wget.vcxproj", "{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99C42591-8BF5-4B2E-A3D5-6A51E2C995F7} = {99C42591-8BF5-4B2E-A3D5-6A51E2C995F7}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{3A10F4A2-C28C-4235-BC73-DF3BE708F077}"
+	ProjectSection(SolutionItems) = preProject
+		..\README = ..\README
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -26,6 +36,10 @@ Global
 		{EFEC9672-B839-4135-A48B-70495F911205}.Debug|Win32.Build.0 = Debug|Win32
 		{EFEC9672-B839-4135-A48B-70495F911205}.Release|Win32.ActiveCfg = Release|Win32
 		{EFEC9672-B839-4135-A48B-70495F911205}.Release|Win32.Build.0 = Release|Win32
+		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}.Debug|Win32.Build.0 = Debug|Win32
+		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}.Release|Win32.ActiveCfg = Release|Win32
+		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,5 +47,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{99C42591-8BF5-4B2E-A3D5-6A51E2C995F7} = {9D319EA2-F6B9-4CB2-9EC5-9D4979FA5DB3}
 		{EFEC9672-B839-4135-A48B-70495F911205} = {9D319EA2-F6B9-4CB2-9EC5-9D4979FA5DB3}
+		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3} = {F510F006-B804-429D-B397-9EE8D251626D}
 	EndGlobalSection
 EndGlobal

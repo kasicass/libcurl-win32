@@ -24,7 +24,7 @@
 
 #include <curl/curl.h>
 #include "urldata.h"
-#include "share.h"
+#include "curl_share.h"
 #include "vtls/vtls.h"
 #include "curl_memory.h"
 

@@ -30,7 +30,7 @@
 #include "connect.h"
 #include "progress.h"
 #include "easyif.h"
-#include "share.h"
+#include "curl_share.h"
 #include "multiif.h"
 #include "sendf.h"
 #include "timeval.h"

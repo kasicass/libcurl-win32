@@ -51,7 +51,7 @@
 #include "sendf.h"
 #include "hostip.h"
 #include "hash.h"
-#include "share.h"
+#include "curl_share.h"
 #include "strerror.h"
 #include "url.h"
 #include "inet_ntop.h"
