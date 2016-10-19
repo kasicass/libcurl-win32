@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EFEC9672-B839-4135-A48B-70495F911205}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>curl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\props\Exe.props" />
+    <Import Project="..\props\CrtDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\props\Exe.props" />
+    <Import Project="..\props\CrtRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rd\curl\lib\config-win32.h" />
+    <ClInclude Include="..\..\3rd\curl\lib\curl_setup.h" />
+    <ClInclude Include="..\..\3rd\curl\lib\nonblock.h" />
+    <ClInclude Include="..\..\3rd\curl\lib\rawstr.h" />
+    <ClInclude Include="..\..\3rd\curl\lib\strtoofft.h" />
+    <ClInclude Include="..\..\3rd\curl\lib\warnless.h" />
+    <ClInclude Include="..\..\3rd\curl\src\slist_wc.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_binmode.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_bname.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_cb_dbg.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_cb_hdr.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_cb_prg.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_cb_rea.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_cb_see.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_cb_wrt.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_cfgable.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_convert.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_dirhie.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_doswin.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_easysrc.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_formparse.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_getparam.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_getpass.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_help.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_helpers.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_homedir.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_hugehelp.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_libinfo.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_main.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_metalink.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_mfiles.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_msgs.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_operate.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_operhlp.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_panykey.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_paramhlp.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_parsecfg.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_sdecls.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_setopt.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_setup.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_sleep.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_strdup.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_urlglob.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_util.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_version.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_vms.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_writeenv.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_writeout.h" />
+    <ClInclude Include="..\..\3rd\curl\src\tool_xattr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\3rd\curl\src\curl.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\3rd\curl\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\3rd\curl\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rd\curl\lib\nonblock.c" />
+    <ClCompile Include="..\..\3rd\curl\lib\rawstr.c" />
+    <ClCompile Include="..\..\3rd\curl\lib\strtoofft.c" />
+    <ClCompile Include="..\..\3rd\curl\lib\warnless.c" />
+    <ClCompile Include="..\..\3rd\curl\src\slist_wc.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_binmode.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_bname.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_cb_dbg.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_cb_hdr.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_cb_prg.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_cb_rea.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_cb_see.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_cb_wrt.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_cfgable.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_convert.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_dirhie.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_doswin.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_easysrc.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_formparse.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_getparam.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_getpass.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_help.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_helpers.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_homedir.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_hugehelp.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_libinfo.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_main.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_metalink.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_mfiles.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_msgs.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_operate.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_operhlp.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_panykey.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_paramhlp.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_parsecfg.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_setopt.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_sleep.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_strdup.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_urlglob.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_util.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_vms.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_writeenv.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_writeout.c" />
+    <ClCompile Include="..\..\3rd\curl\src\tool_xattr.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

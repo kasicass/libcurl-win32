@@ -4,8 +4,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <OutDir>$(SolutionDir)..\lib\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\build\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)..\build\$(ProjectName)_$(Configuration)\</IntDir>
   </PropertyGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
