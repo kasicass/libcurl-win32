@@ -6,6 +6,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{F510F006-B804-429D-B397-9EE8D251626D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcurl", "curl\libcurl.vcxproj", "{99C42591-8BF5-4B2E-A3D5-6A51E2C995F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{259C9F0A-D60D-4051-B08B-3B16183C4FD0} = {259C9F0A-D60D-4051-B08B-3B16183C4FD0}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curl", "curl\curl.vcxproj", "{EFEC9672-B839-4135-A48B-70495F911205}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -21,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{3A10F4A2-C28
 	ProjectSection(SolutionItems) = preProject
 		..\README = ..\README
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "curl\zlib.vcxproj", "{259C9F0A-D60D-4051-B08B-3B16183C4FD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +45,10 @@ Global
 		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}.Debug|Win32.Build.0 = Debug|Win32
 		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}.Release|Win32.ActiveCfg = Release|Win32
 		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3}.Release|Win32.Build.0 = Release|Win32
+		{259C9F0A-D60D-4051-B08B-3B16183C4FD0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{259C9F0A-D60D-4051-B08B-3B16183C4FD0}.Debug|Win32.Build.0 = Debug|Win32
+		{259C9F0A-D60D-4051-B08B-3B16183C4FD0}.Release|Win32.ActiveCfg = Release|Win32
+		{259C9F0A-D60D-4051-B08B-3B16183C4FD0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +56,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{99C42591-8BF5-4B2E-A3D5-6A51E2C995F7} = {9D319EA2-F6B9-4CB2-9EC5-9D4979FA5DB3}
 		{EFEC9672-B839-4135-A48B-70495F911205} = {9D319EA2-F6B9-4CB2-9EC5-9D4979FA5DB3}
+		{259C9F0A-D60D-4051-B08B-3B16183C4FD0} = {9D319EA2-F6B9-4CB2-9EC5-9D4979FA5DB3}
 		{E31557F7-7540-48E1-9B62-3F5D4F81AEE3} = {F510F006-B804-429D-B397-9EE8D251626D}
 	EndGlobalSection
 EndGlobal

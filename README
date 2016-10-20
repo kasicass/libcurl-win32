@@ -10,8 +10,10 @@ VS2012 sln
 [vs2012]            /MT, static build all things
 
 ==== FAQ ====
-1. error C2065: '_SH_DENYNO': undeclared identifier
+1. build libcurl, error C2065: '_SH_DENYNO': undeclared identifier
 http://stackoverflow.com/questions/6884018/libcurl-compile-errors
 
-2. C++ compile needs macro HAVE_BOOL_T
+2. C++ compile with libcurl needs macro HAVE_BOOL_T
+
+3. error LNK2001: unresolved external symbol _zlibVersion
 

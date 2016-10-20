@@ -10,6 +10,9 @@
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
     </Lib>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\3rd\zlib</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
