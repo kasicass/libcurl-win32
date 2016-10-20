@@ -4,7 +4,8 @@ https://curl.haxx.se/libcurl/c/example.html
 VS2012 sln
 3rd\curl\projects\Windows\VC11\curl-all.sln
 
-[3rd\curl]          curl source
+[3rd\curl]          curl-7.50.3 (https://curl.haxx.se/)
+[3rd\zlib]          zlib-1.2.8  (http://zlib.net/)
 [src]               my test app
 [vs2012]            /MT, static build all things
 
