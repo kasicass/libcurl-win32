@@ -14,6 +14,8 @@ VS2012 sln
 http://stackoverflow.com/questions/6884018/libcurl-compile-errors
 
 2. C++ compile with libcurl needs macro HAVE_BOOL_T
+But I found it built ok without HAVE_BOOL_T, =_=!
 
 3. error LNK2001: unresolved external symbol _zlibVersion
+all project needs macro ZLIB_WINAPI
 

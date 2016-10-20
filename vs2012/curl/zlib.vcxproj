@@ -34,6 +34,19 @@
     <ClCompile Include="..\..\3rd\zlib\uncompr.c" />
     <ClCompile Include="..\..\3rd\zlib\zutil.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rd\zlib\crc32.h" />
+    <ClInclude Include="..\..\3rd\zlib\deflate.h" />
+    <ClInclude Include="..\..\3rd\zlib\gzguts.h" />
+    <ClInclude Include="..\..\3rd\zlib\inffast.h" />
+    <ClInclude Include="..\..\3rd\zlib\inffixed.h" />
+    <ClInclude Include="..\..\3rd\zlib\inflate.h" />
+    <ClInclude Include="..\..\3rd\zlib\inftrees.h" />
+    <ClInclude Include="..\..\3rd\zlib\trees.h" />
+    <ClInclude Include="..\..\3rd\zlib\zconf.h" />
+    <ClInclude Include="..\..\3rd\zlib\zlib.h" />
+    <ClInclude Include="..\..\3rd\zlib\zutil.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{259C9F0A-D60D-4051-B08B-3B16183C4FD0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -67,19 +80,15 @@
     <Import Project="..\props\CrtRelease.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>$(ProjectName)_static</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <TargetName>$(ProjectName)_static</TargetName>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;ZLIB_WINAPI;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -94,7 +103,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;ZLIB_WINAPI;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

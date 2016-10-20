@@ -9,10 +9,10 @@
   <ItemDefinitionGroup>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\lib\$(Configuration)\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ws2_32.lib;wldap32.lib;crypt32.lib;libcurl.lib;zlib_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;wldap32.lib;crypt32.lib;libcurl.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
-      <PreprocessorDefinitions>CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ZLIB_WINAPI;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)..\3rd\curl\include;$(SolutionDir)..\3rd\curl\lib;$(SolutionDir)..\3rd\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
